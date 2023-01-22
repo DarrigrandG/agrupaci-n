@@ -1,0 +1,8 @@
+div {
+  display: grid;
+  background-color: aquamarine;
+  border: 1px solid sandybrown;
+  padding: 20px;
+  /*grid-template-columns: repeat(2, 1fr);*/
+  grid-template-rows: repeat(2, 1fr);
+}

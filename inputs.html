@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="inputs.css">
+  <title>Imputs</title>
+</head>
+<body>
+  <p>Inputs claves para un formulario</p>
+  <div>Inputs
+      <form action="#">
+      <label for="propietario">Propietario:<label></label>
+      <input id="propietario" type="text" placeholder="Apellido y nombres" name="nombre">
+
+      <label for="localidad">Localidad:<label></label>
+      <input id="localidad" type="text" placeholder="Ingrese su localidad" name="nombre">
+
+      <label for="fecha">Revisado el día:<label></label>
+      <input id="fecha" type="text" placeholder="Ingrese la fecha" name="date">
+
+      <label for="lugar-revisado">Lugar de revisación:<label></label>
+      <input id="lugar-revisado" type="text" placeholder="Lugar de revisación" name="date">
+
+      <label for="pelaje">Pelaje:<label></label>
+      <input id="pelaje" type="text" placeholder="Características" name="nombre">
+
+      <label for="telefono">Teléfono<label></label>
+      <input id="telefono" type="text" placeholder="Número de teléfono" name="nombre">
+
+      <label for="localidad">Localidad:<label></label>
+      <input id="localidad" type="text" placeholder="Localidad en que fue revisado" name="nombre">
+
+      <label for="mail">Ingese su e-mail:<label></label>
+      <input type="email" name="correo" id="mail" placeholder="Correo electrónico">
+
+      <label for="clave">Clave secreta:<label></label>
+      <input id="clave" type="password" placeholder="Ingrese su clave">
+
+      <label for="macho">Macho<label></label>
+      <input type="checkbox" name="sexo" id="macho">
+      
+      <label for="hembra">Hembra<label></label>
+      <input type="checkbox" name="sexo" id="hembra">
+
+      <label for="pelajes">Pelajes:<label></label>
+      <select name="pelaje" id="pelajes">
+        <option value="Alazan">Alazan</option>
+        <option value="Tostado">Tostado</option>
+        <option value="Picazo">Picazo</option>
+        <option value="Tordillo">Tordillo</option>
+        <option value="Otro">Otro</option>
+      </select>
+    <!--Lo de radio es como checkbox pero sólo permite alternativa y no las dos cosas como
+    con checkbox-->
+      <label for="macho">Macho<label></label>
+      <input type="radio" name="sexo" id="macho">
+      <label for="hembra">Hembra<label></label>
+      <input type="radio" name="sexo" id="hembra">
+    <!--Hay diferencias entre el botón 'button' y el botón 'submit'. El primero no envía datos
+    mientras que el segundo sí lo hace. Creo que el submit sólo envía cuando el usuario respetó
+    el rellenado de los casilleros, si puso un correo, sino dejó algo vacío, etc. El 'button' es
+    para hacer alguna acción con JS. El submit envía y listo.-->
+      <input type="button" value="Enviar">
+      <input type="submit" value="Revisar y enviar">
+
+    <!--Completar-->
+      <label for="color">Elija su color favorito:<label></label>
+      <input type="color" name="color" id="color" placeholder="Elija un color adecuado">
+    <!--Completar-->
+      <label for="rango">Mínimo y máximo:<label></label>
+      <input type="range" name="rango" id="rango">
+    <!--Completar-->
+      <label for="fecha">Fecha:<label></label>
+      <input type="datetime" name="fecha" id="fecha" placeholder="Día de revisación"> 
+    </form>
+  </div>
+</body>
+</html>

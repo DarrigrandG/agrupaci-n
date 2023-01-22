@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Roboto:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="fichado.css">
+  <title>Ficha</title>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="encabezado">
+        <img class="logo" src="cs\logo.png" alt="logo">
+        <div>
+          <h1>"Agrupación criolla"</h1>
+          <h2>BENITO JUÁREZ</h2>
+        </div>
+        <div class="solicitud">
+          <form action="#">
+          <label for="solicitud">Solicitud de inscripción<label></label>
+          <input id="solicitud" type="text" placeholder="Número de solicitud" name="nombre">
+          </form>
+        </div>
+      </div>
+    </header>
+   <hr> 
+<!--Formulario revisión-->
+    <div class="inscripcion">
+        <label class="propietario" for="propietario">Propietario:<label></label>
+        <input class="propietario-input" id="propietario" type="text" placeholder="Apellido y nombres" name="nombre">
+
+        <label class="localidad1" for="localidad">Localidad:<label></label>
+        <input class="localidad-input" id="localidad1" type="text" placeholder="Ingrese su localidad" name="nombre">
+
+        <label class="fecha" for="fecha">Revisado el día:<label></label>
+        <input class="fecha" id="fecha-input" type="text" placeholder="Ingrese la fecha" name="date">
+
+        <label class="lugar-revisado" for="lugar-revisado">Lugar de revisación:<label></label>
+        <input class="lugar-revisado-input" id="lugar-revisado" type="text" placeholder="Lugar de revisación" name="date">
+
+        <label class="pelaje" for="pelaje">Pelaje:<label></label>
+        <input class="pelaje-input" id="pelaje" type="text" placeholder="Características" name="nombre">
+
+        <label class="macho" for="macho">Macho<label></label>
+        <input class="macho-input" type="radio" name="sexo" id="macho">
+        <label class="hembra" for="hembra">Hembra<label></label>
+        <input class="hembra-input" type="radio" name="sexo" id="hembra">
+
+        <label class="telefono" for="telefono">Teléfono<label></label>
+        <input class="telefono-input" id="telefono" type="text" placeholder="Número de teléfono" name="nombre">
+
+        <label class="localidad2" for="localidad">Localidad:<label></label>
+        <input class="localidad-input" id="localidad2" type="text" placeholder="Localidad en que se revisó" name="nombre">
+    </div>
+    <hr>
+
+    <img class="caballo" src="cs\caballo.png" alt="Perfil caballo">
+    <hr>
+    <!--Formulario pagos-->
+    <div class="pagos">
+      <h2>Pagos realizados</h2>
+      <form action="#" class="pagos">
+        <label for="juarez">Juárez<label></label>
+        <input type="checkbox" name="juarez" id="juarez">
+        <label for="laprida">Laprida<label></label>
+        <input type="checkbox" name="laprida" id="laprida">
+        <label for="cachari">Cacharí<label></label>
+        <input type="checkbox" name="cachari" id="cachari">
+        <label for="lapastora">La Pastora<label></label>
+        <input type="checkbox" name="lapastora" id="lapastora">
+        <label for="carhue">Carhué<label></label>
+        <input type="checkbox" name="carhué" id="carhue">
+        <label for="rauch">Rauch<label></label>
+        <input type="checkbox" name="rauch" id="rauch">
+      </form>
+
+      <!--Observaciones-->
+      <p class="observaciones">Observaciones: <input class="observaciones_input" type="text" name="nombre" placeholder="Realice sus observaciones"/></p>
+      <p class="mansos"> <b>Inscripción mansos:</b> Anticipada en dos cuotas de 1.000$ (mil pesos) cada una o en el día de la fiesta 2.500$ (dos mil quinientos)</p>
+      <form action="#" class="mansos">
+        <label for="cuota1">Cuota 1:<label></label>
+        <input type="checkbox" name="cuota1" id="cuota1">
+        <label for="cuota2">Cuota 2:<label></label>
+        <input type="checkbox" name="cuota2" id="cuota2">
+      </form> 
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Roboto:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="stylesheet" href="grilla.css">
+  <title>Grilla</title>
+</head>
+<body class="grid-container">
+  <Header class="header">
+    <a href="https://benitojuarez.gov.ar/partido-de-benito-juarez/" target="_blank"> <img id="escudo" src="Escudo_del_partido_de_Benito_Juárez.png" alt="Escudo del partido de Benito Juárez"></a> 
+    <div class="agrupacion">
+      <h1>"Agrupación criolla"</h1>
+      <h2>Benito Juárez</h2>
+    </div>
+    <div class="solicitud">
+      <label for="solicitud"> Solicitud de inscripción: </label><br>
+      <input class="input-box" type="number" name="#" id="solicitud" required placeholder="Número de inscripción">
+    </div>
+  </Header>
+
+  <nav class="navbar">
+    <div>
+      <ul>
+        <li> <a class="nav1" href="#"> Peñas tradicionales </a> </li>
+        <li> <a class="nav1" href="#"> Pruebas de riendas </a> </li>
+        <li> <a class="nav1" href="#"> Domas y jineteadas </a> </li>
+      </ul>
+    </div>
+  </nav>
+
+  <aside class="sidebar">
+    <!--Foto con perfil de los caballos--> 
+    <Article class="detalles">
+      <h2>Detalles del animal</h2>
+      <img id="caballo" src="perfiles.png" alt="Perfil del animal">
+    </Article>
+  </aside>
+
+  <article class="main">
+    <section class="section1">
+      <!--<div class="principal">-->
+
+        <h2>Solicitud de inscripción a la prueba de riendas</h2>
+  
+        <form action="/servidor">
+          <div class="form-1">
+            <div class="form-1-1">
+              <label for="propietario"> <i class="fa-solid fa-person"></i> Propietario: </label>
+              <input class="input-box" type="text" name="#" id="propietario" required placeholder="Nombre del propietario">
+  
+              
+              <label for="localidad1"> <i class="fa-solid fa-location-dot"></i> Localidad de residencia:</label>
+              <input class="input-box" type="text" name="#" id="localidad1" required placeholder="Ingrese su localidad">
+  
+              <label for="provincia"><i class="fa-solid fa-earth-americas"></i> Provincia:</label>
+              <select name="provincia" id="provincia">
+                <option value="Bs.As.">Bs.As.</option>
+                <option value="Santa Fe">Santa Fe</option>
+                <option value="Córdoba">Córdoba</option>
+                <option value="La Pampa">La Pampa</option>
+                <option value="Otra">Otra</option>
+              </select>
+  
+              <label for="revisado"> <i class="fa-solid fa-calendar-days"></i> Fecha de revisación:</label>
+              <input class="input-box" type="date" name="#" id="revisado" required placeholder="Fecha de revisación">
+  
+              <label for="lugar"><i class="fa-solid fa-location-dot"></i> Lugar de revisación:</label>
+              <input class="input-box" type="text" name="#" id="lugar" required placeholder="Lugar en que fue revisado">
+            </div>
+  
+          <div class="form-1-2">
+            <label for="pelajes"><i class="fa-solid fa-horse-head"></i> Pelajes:</label>
+            <select name="pelaje" id="pelajes">
+                <option value="Alazan">Alazan</option>
+                <option value="Tostado">Tostado</option>
+                <option value="Picazo">Picazo</option>
+                <option value="Tordillo">Tordillo</option>
+                <option value="Otro">Otro</option>
+            </select>
+                
+            <label for="macho">
+            <input id="macho" value="macho" type="radio" name="sexo" checked> Macho </label>
+            <label for="hembra">
+            <input id="hembra" value="hembra" type="radio" name="sexo"> Hembra </label>
+  
+            <label for="telefono"><i class="fa-solid fa-phone"></i> Número de teléfono:</label>
+            <input class="input-box" type="number" name="" id="telefono" required placeholder="Ingrese su número de teléfono">
+  
+            <label for="localidad2"><i class="fa-solid fa-location-dot"></i> Localidad en que se revisó:</label>
+            <input class="input-box" type="text" name="" id="localidad2" placeholder="Ingrese la localidad en que se revisó">
+                  <!--<details id="detailist">Alazán</details>
+                  <input type="list" id="detailist" placeholder="Pelaje del animal"> <br>
+                  <details id="detailist">Tordillo</details> <br>-->
+          </div>
+        </form>  
+        </div>
+  
+        <div class="enviar1">
+          <label for="fin">Una vez completado haga click el botón</label>
+          <button class="enviar-btn" type="submit" onclick="registro()">¡Inscribirme! <i class="fas fa-angle-double-right"></i></button> 
+        </div>
+  
+        <p id="gracias"> Muchas gracias por confiar en nuestra organización</p>
+      </div>
+    </section>
+
+    <section class="section2">
+      <!--Formulario de pagos-->
+      <div>
+          <h2>Formulario de pagos</h2>
+          <div class="cuotas1">
+            <label for="juarez"> Benito Juárez </label> <input id="juarez" type="checkbox" name="pagos">
+            <label for="laprida"> Laprida </label> <input id="laprida" type="checkbox" name="pagos">
+            <label for="cachari"> Cacharí </label> <input id="cachari" type="checkbox" name="pagos">
+            <label for="lapastora"> La Pastora </label> <input id="lapastora" type="checkbox" name="pagos">
+            <label for="carhue"> Carhué </label> <input id="carhue" type="checkbox" name="pagos">
+            <label for="rauch">Rauch </label> <input id="rauch" type="checkbox" name="pagos"> 
+          </div>
+      </div>
+    </section>
+
+    <!--Inscripción mansos-->
+    <section class="section3">
+      <div>
+
+        <h2>Inscripción mansos</h2>
+        <p>Anticipada en dos cuotas de 1.000$ (mil pesos) cada una o el día de la fiesta 2.500$ (dos mil quinientos)</p>
+        <div class="cuotas2">
+          <label for="cuota1"> Pago cuota 1: </label>
+          <input id="cuota1" type="checkbox" name="cuotas"> 
+          <label for="cuota2"> Pago cuota 2: </label>
+          <input id="cuota2" type="checkbox" name="cuotas"> 
+        </div>
+
+        <div class="enviar2">
+          <label for="fin">Una vez revisado el formulario haga clic debajo</label>
+          <button class="enviar-btn" type="submit" onclick="pagos()">Enviar inscripción <i class="fas fa-angle-double-right"></i></button>
+        </div> 
+
+      </div>
+    </section>
+
+    <article class="observaciones">
+
+      <label for="observaciones">Observaciones</label>
+      <textarea name="#" disable="false" id="observaciones" rows="5" placeholder="Escriba aquí sus comentarios."></textarea>
+
+      <div class="comentarios">
+        <button class="comentario" type="submit" onclick="mostrarComentarios()">Enviar comentario <i class="fas fa-angle-double-right"></i></button> 
+      </div>
+
+    </article>
+  </article>
+
+  <footer class="footer">
+    <div class="pie">
+      <h3>Redes sociales y contactos</h3>
+        <div class="redes">
+          <a class="icons" href="#"> <i class="fab fa-facebook-f"></i></a>
+          <a class="icons" href="#"> <i class="fab fa-twitter"></i></a>
+          <a class="icons" href="#"> <i class="fab fa-instagram"></i></a>
+          <a class="icons" href="#"> <i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+
+    <div id="chalu"> <i class="fa-solid fa-wand-sparkles"></i><p>Powered and desing by Chalu</p></div>
+  </footer>
+  <script src="grilla.js"></script>
+</body>
+</html>

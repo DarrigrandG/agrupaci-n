@@ -1,0 +1,350 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size:larger;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cg fill='%239C92AC' fill-opacity='0.68'%3E%3Cpath d='M12 0h18v6h6v6h6v18h-6v6h-6v6H12v-6H6v-6H0V12h6V6h6V0zm12 6h-6v6h-6v6H6v6h6v6h6v6h6v-6h6v-6h6v-6h-6v-6h-6V6zm-6 12h6v6h-6v-6zm24 24h6v6h-6v-6z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+}
+
+
+h2 {
+  display: flex;
+  justify-content: center;
+  font-size:x-large;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  font-size:large;
+}
+
+.grid-container {
+  display: grid;
+  gap: 10px; 
+  width: 90%;
+  justify-content: center;
+  margin: auto;
+  grid-template: 
+  "header" 150px
+  "navbar" 100px
+  "main" auto
+  "sidebar" auto
+  "footer" 100px;
+}
+
+/*--El encabezado: escudo, título y solicitud*/
+.header {
+  grid-area: header;
+  display: flex;
+  min-width: 400px;
+  height: 150px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(216, 115, 135, 0.9);
+  text-align: center;
+}
+#escudo {
+  width: 180px;
+  height: 180px;
+  padding-top: 30px;
+  padding-left: 50px;
+  /*overflow: visible;*/
+}
+#escudo:hover {
+  filter: drop-shadow(3px 0px 30px rgb(185, 59, 59));
+}
+
+.solicitud {
+  padding-right: 50px;
+}
+
+/*La barra de navegación con los tres enlaces.*/
+.navbar {
+  grid-area: navbar;
+  
+  padding-left: 50px;
+  padding-right: 50px;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: auto;
+  background-color: rgb(167, 177, 194, 0.9);
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  list-style: none;
+  padding-left: 50px;
+  padding-right: 50px;
+  align-items: center;
+  height: 3.5em;
+  width: auto;
+  margin-top: 1vh;
+  list-style: none;
+}
+.nav1 {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  font-size: x-large;
+  text-shadow: 5px 5px 5px black;
+}
+
+.nav1:hover {
+  border-bottom: 4px solid rgba(42, 44, 54, 0.815);
+}
+
+/*El principal con las tres secciones*/
+.main {
+  grid-area: main;
+  width: 100%;
+  height: auto;
+}
+.section1 {
+  background-color: rgb(115, 216, 149, 0.9);
+}
+
+#inscripcion {
+  display: flex;
+  justify-content: center;
+}
+
+.input-box {
+	background: #fff;
+	border: 3px solid transparent;
+	border-radius: 3px;
+	height: 25px;
+	line-height: 45px;
+	transition: .3s ease all;
+}
+
+select {
+  background: #fff;
+	border: 3px solid transparent;
+	border-radius: 3px;
+	height: 25px;
+	line-height: 45px;
+	transition: .3s ease all;
+}
+
+.form-1 {
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly;
+}
+
+.form-1-1 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 50px;
+}
+
+.form-1-2 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 50px;
+}
+
+.enviar1 {
+  display: grid;
+  justify-content:center;
+  align-items: center;
+  margin-left: auto;
+  margin: 20px 10px 20px 10px;
+}
+.enviar-btn {
+  cursor: pointer;
+  display:inline-block;
+  border: 0;
+  font-weight: bold;
+  padding: 10px 20px;
+  background: #262626;
+  color: aliceblue;
+  font-size: 15px;
+  border: 1px solid gray;
+  margin: 10px 0px;
+}
+
+.enviar-btn:hover {
+	box-shadow: 3px 0px 30px rgb(185, 59, 59);
+}
+
+#gracias {
+  display: grid;
+  font-weight: bold;
+  justify-content: center;
+}
+
+.section2 {
+  margin-top: 1vh;
+  background-color: rgb(202, 97, 188, 0.9);
+  padding: 0 50px;
+}
+
+.cuotas1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section3 {
+  margin-top: 1vh;
+  padding: 0 50px;
+  width: 100%;
+  height: auto;
+  background-color: rgb(199, 179, 197, 0.9)
+}
+
+.cuotas2 {
+  display: flex;
+  /*padding-right: 10px;
+  margin-right: 40px;*/
+  justify-content: center;
+  align-items: center;
+}
+
+input[type=checkbox]{
+  margin:10px !important;
+}
+.enviar2 {
+  display: grid;
+  justify-content:center;
+  text-align: center;
+  margin-left: auto;
+  margin: 20px 10px 20px 10px;
+}
+
+.observaciones {
+  background-color:rgb(175, 230, 230);
+  padding: 0 50px;
+  margin-top: -2.5vh;
+  display: grid;
+  text-align:center;
+  text-align: center;
+  height: auto;
+  resize: vertical;
+  width: auto;
+}
+
+.comentario {
+  cursor: pointer;
+  display:inline-block;
+  border: 0;
+  font-weight: bold;
+  padding: 10px 20px;
+  background: #262626;
+  color: aliceblue;
+  font-size: 15px;
+  border: 1px solid gray;
+  margin: 10px 0px;
+}
+
+.comentario:hover {
+	box-shadow: 3px 0px 30px rgb(185, 59, 59);
+}
+
+/*Barra lateral con caballo*/
+.sidebar {
+  grid-area: sidebar;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  margin-top: 1vh;
+  padding-left: 50px;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  background-color: rgb(36, 199, 177, 0.9)
+}
+
+#caballo {
+  width: 10em;
+  padding: 5px;
+  border: 1px black solid;
+}
+
+
+.footer {
+  grid-area: footer;
+  margin-top: 1vh;
+  padding-left: 50px;
+  width: 100%;
+  height: 4.5em;
+  background-color: rgba(71, 123, 133, 0.9);
+}
+
+.redes {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 2.5em;
+}
+
+.icons {
+  color: #262626;
+}
+
+#chalu {
+  display: flex;
+  justify-content: right;
+  padding-right: 1.5em;
+  padding-top: 1em;
+  font-style:italic;
+  font-size: .5em;
+}
+
+@media (min-width: 600px) {
+  .grid-container {
+    grid-template:  
+    "header header" 150px
+    "navbar navbar" 100px
+    "main sidebar" auto
+    "footer footer" 100px /
+    auto 200px;
+  }
+}
+
+@media (min-width: 900px) {
+  .grid-container {
+    grid-template:  
+    "header header header" 150px
+    "navbar main sidebar"  auto
+    "footer footer footer" 100px /
+    200px auto 200px;
+  }
+  .navbar {
+    grid-area: 
+    navbar;
+    display: grid;
+    justify-content: space-around;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    text-align: left;
+    margin-top: 1vh;
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    
+  }
+  .navbar ul {
+    display: grid;
+    text-align: left;
+    align-items: flex-start;
+    list-style:circle;
+  }
+
+}

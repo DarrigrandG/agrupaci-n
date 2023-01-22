@@ -1,0 +1,236 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+main {
+  display: grid;
+	max-width: auto;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cg fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath d='M12 0h18v6h6v6h6v18h-6v6h-6v6H12v-6H6v-6H0V12h6V6h6V0zm12 6h-6v6h-6v6H6v6h6v6h6v6h6v-6h6v-6h6v-6h-6v-6h-6V6zm-6 12h6v6h-6v-6zm24 24h6v6h-6v-6z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+	width: 90%;
+	margin: auto;
+	padding: 40px;
+  border: 1px solid rgb(195, 181, 235);
+}
+
+.encabezado {
+  display: grid;
+  height: auto;
+  background-color: rgba(157, 156, 240, .5);
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 1em;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+.solicitud {
+  justify-items: right;
+  align-items: flex-start;
+  text-align: left;
+  color: black;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+/*div:hover {
+  border: solid 1px gray;
+}*/
+  
+img:hover {
+  border: dotted 1px red;
+}
+
+.propietario {
+  grid-area: propietario;
+}
+
+.propietario-input {
+  width: auto;
+	background: #fff;
+	border: 3px solid transparent;
+	border-radius: 3px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;
+}
+
+.localidad1 {
+  grid-area: localidad1;
+}
+
+.localidad-input {
+  width: auto;
+	background: #fff;
+	border: 3px solid transparent;
+	border-radius: 3px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;
+}
+
+.fecha {
+  grid-area: fecha;
+}
+
+.fecha-input {
+  width: auto;
+	background: #fff;
+	border: 3px solid transparent;
+	border-radius: 3px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;
+}
+
+.lugar-revisado {
+  grid-area: lugar-revisado;
+}
+
+.lugar-revisado-input {
+  width: auto;
+	background: #fff;
+	border: 3px solid transparent;
+	border-radius: 3px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;
+}
+
+.pelaje {
+  grid-area: pelaje;
+}
+
+.pelaje-input {
+  width: auto;
+	background: #fff;
+	border: 3px solid transparent;
+	border-radius: 3px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;
+}
+
+.macho {
+  grid-area: macho;
+}
+
+.macho-input {
+  width: auto;
+	background: #fff;
+	border: 3px solid transparent;
+	border-radius: 3px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;
+}
+
+.hembra {
+  grid-area: hembra;
+}
+
+.hembra-input {
+  width: auto;
+	background: #fff;
+	border: 3px solid transparent;
+	border-radius: 3px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;
+}
+.telefono {
+  grid-area: telefono;
+} 
+
+.telefono-input {
+  width: auto;
+	background: #fff;
+	border: 3px solid transparent;
+	border-radius: 3px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;
+}
+
+.localidad2 {
+  grid-area: localidad2;
+}
+
+.localidad2-input {
+  width: auto;
+	background: #fff;
+	border: 3px solid transparent;
+	border-radius: 3px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;
+}
+.inscripcion {
+  display: grid;
+  gap: 20px;
+  background-color: rgba(94, 203, 223, 0.5);
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "propietario localidad1"
+  "lugar-revisado fecha"
+  "pelaje"
+  "macho hembra"
+  "localidad2 telefono";
+}
+
+.linea1 {
+  height: 5px;
+  color: brown;
+}
+
+.caballo {
+  width: auto;
+  border: 1px solid red;
+  justify-self: center;
+}
+
+hr {
+  height: 3px;
+  background-color: rgba(43, 71, 233, 0.9);
+}
+
+.linea2 {
+  height: 10px;
+  color: red;
+}
+
+.pagos {
+width: auto;
+height: 40px;
+background: #0075FF;
+
+}
+
+.observaciones_input {
+  width: 100%;
+	background: #fff;
+	border: 3px solid transparent;
+	border-radius: 3px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;
+}
+.observaciones_input:focus {
+border: 3px solid #0075FF;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);}

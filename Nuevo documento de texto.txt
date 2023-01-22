@@ -1,0 +1,50 @@
+
+
+
+-----
+
+function registro(){
+  var propietario=document.getElementById("propietario").value;
+  var localidad1=document.getElementById("localidad1").value;
+  var provincia=document.getElementById("provincia").value;
+  var revisado=document.getElementById("revisado").value;
+  var lugar=document.getElementById("lugar").value;
+  var pelajes=document.getElementById("pelajes").value;
+  var macho=document.getElementById("macho").value;
+  var hembra=document.getElementById("hembra").value;
+  var telefono=document.getElementById("telefono").value;
+  var localidad2=document.getElementById("localidad2").value;
+  //var sexo=document.getElementsByName("sexo")
+
+  /*var sexoSeleccionado = false;
+        var macho = document.getElementById("macho");
+        var hembra = document.getElementById("hembra");
+        
+        if (macho.checked) {
+            sexoSeleccionado = true;
+        } else if (hembra.checked) {
+            sexoSeleccionado = true;
+        }
+        return true;*/
+    
+        if (propietario=="") {
+          alert ("Colocar el nombre del propietario es obligatorio");
+          document.getElementById("propietario").focus();
+        }
+        else {
+          if (localidad1=="") {
+            alert ("Colocar la localidad del propietario es obligatorio");
+            document.getElementById("localidad1").focus();
+        }
+        else {
+          if (telefono=="") {
+            alert ("Colocar el número de teléfono es obligatorio");
+            document.getElementById("telefono").focus();
+        }
+        else {
+          alert ("Gracias por confiar en nuestra organización");
+          console.log(propietario+ " " + localidad1+ " " + provincia+ " " + revisado+ " " + lugar+ " " +pelajes+ " " +macho+ " " +hembra+ " " +telefono+ " " +localidad2+ " ");
+        }
+        }
+      }
+    }      

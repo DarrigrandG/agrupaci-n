@@ -1,0 +1,86 @@
+function registro(){
+  var propietario=document.getElementById("propietario").value;
+  var localidad1=document.getElementById("localidad1").value;
+  var provincia=document.getElementById("provincia").value;
+  var revisado=document.getElementById("revisado").value;
+  var lugar=document.getElementById("lugar").value;
+  var pelajes=document.getElementById("pelajes").value;
+  var macho=document.getElementById("macho").value;
+  var hembra=document.getElementById("hembra").value;
+  var telefono=document.getElementById("telefono").value;
+  var localidad2=document.getElementById("localidad2").value;
+  
+  var sexoSeleccionado = false;
+  var macho=document.getElementById("macho").checked;
+  hembra=document.getElementById("hembra").checked;
+
+  if (macho.checked) {
+    sexoSeleccionado = true;
+  } else if (hembra.checked) {
+    sexoSeleccionado = true;
+  }
+
+  if (propietario=="") {
+    alert ("Colocar el nombre del propietario es obligatorio");
+    document.getElementById("propietario").focus();
+  }
+  else {
+    if (localidad1=="") {
+      alert ("Colocar la localidad del propietario es obligatorio");
+      document.getElementById("localidad1").focus();
+  }
+  else {
+    if (telefono=="") {
+      alert ("Colocar el número de teléfono es obligatorio");
+      document.getElementById("telefono").focus();
+    }
+    else {
+      alert ("Gracias por confiar en nuestra organización");
+      console.log(propietario+ " " + localidad1+ " " + provincia+ " " + revisado+ " " + lugar+ " " +pelajes+ " " +macho+ " " +hembra+ " " +telefono+ " " +localidad2+ " ");
+    }
+    }
+  }
+}  
+
+function pagos(){
+  var juarez = document.getElementById("juarez");
+  var laprida = document.getElementById("laprida");
+  var cachari = document.getElementById("cachari");
+  var lapastora = document.getElementById("lapastora");
+  var carhue = document.getElementById("carhue");
+  var rauch = document.getElementById("rauch");
+
+  if (juarez.checked) {
+    alert("Gracias por su participación");
+    console.log("Benito Juarez seleccionado");
+  }
+  if (laprida.checked) {
+    alert("Gracias por su participación");
+    console.log("Laprida seleccionado");
+  }
+  if (cachari.checked) {
+    alert("Gracias por su participación");
+    console.log("Cacharí seleccionado");
+  }
+  if (lapastora.checked) {
+    alert("Gracias por su participación");
+    console.log("La Pastora seleccionado");
+  }
+  if (carhue.checked) {
+    alert("Gracias por su participación");
+    console.log("Carhué seleccionado");
+  }
+  if (rauch.checked) {
+    alert("Gracias por su participación");
+    console.log("Rauch seleccionado");
+  }
+}
+
+function mostrarComentarios() {
+  var comentarios = document.getElementById("observaciones").value;
+  console.log("Comentarios: " + comentarios);
+  alert("Gracias por su comentario, en breve recibirá una devolución.");
+}
+
+
+
